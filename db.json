@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "scores": 
     {
         "scores":   [
@@ -27,6 +28,8 @@
     }
   }
 =======
+=======
+>>>>>>> parent of bd13c83 (Correccion db)
 "scores" [
   {
   "user_id": 1,
