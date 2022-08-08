@@ -4,17 +4,17 @@
       "scores":   [
           {
             "userId": 1,
-            "value": 5,
-            "name":"MajisterSix"
+            "value": 20,
+            "name":"MagisterSix"
           },
           {
             "userId":2,
-            "value": 2,
+            "value": 24,
             "name":"Lunaysa"
           },
           {
             "userId":3,
-            "value": 4,
+            "value": 25,
             "name":"Manolo Villarreal"
           },
           {
