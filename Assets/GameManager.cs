@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     {
         gameOverCanvas.SetActive(true);
         Time.timeScale = 0;
+        HttpManager http = gameObject.GetComponent<HttpManager>();
+        http.SetNewHihgScore();
     }
     public void Replay()
     {
