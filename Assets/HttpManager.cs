@@ -27,11 +27,12 @@ public class HttpManager : MonoBehaviour
         Time.timeScale = 0;
         Token = PlayerPrefs.GetString("token");
         UserName = PlayerPrefs.GetString("username");
-        HighScore = PlayerPrefs.GetInt("highScore");
         Debug.Log("TOKEN: " + Token);
         if (Token != null)
         {
             StartCoroutine(GetPerfil());
+            HighScore = PlayerPrefs.GetInt("highScore");
+
         }
     }
 
@@ -44,6 +45,9 @@ public class HttpManager : MonoBehaviour
     {
         PlayerPrefs.SetString("token", null);
         PlayerPrefs.SetString("username", null);
+        PlayerPrefs.SetString("highScore", null);
+        
+
         Token = PlayerPrefs.GetString("token");
         UserName = PlayerPrefs.GetString("username");
         
@@ -157,7 +161,7 @@ public class HttpManager : MonoBehaviour
     public void SetNewHihgScore()
     {
         Debug.LogWarning("Seteando nuevo higscore");
-        Debug.LogWarning(PlayerPrefs.GetInt("highScore") +"     aaa    d" + Score.score);
+        Debug.LogWarning(PlayerPrefs.GetInt("highScore") +"         " + Score.score);
         if (PlayerPrefs.GetInt("highScore") < Score.score)
         {
             ScoreData data = new ScoreData();
