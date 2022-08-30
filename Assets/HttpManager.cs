@@ -24,6 +24,7 @@ public class HttpManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         Time.timeScale = 0;
         Token = PlayerPrefs.GetString("token");
         UserName = PlayerPrefs.GetString("username");
@@ -45,7 +46,7 @@ public class HttpManager : MonoBehaviour
     {
         PlayerPrefs.SetString("token", null);
         PlayerPrefs.SetString("username", null);
-        PlayerPrefs.SetString("highScore", null);
+        PlayerPrefs.SetInt("highScore", 0);
         
 
         Token = PlayerPrefs.GetString("token");
